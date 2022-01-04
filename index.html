@@ -38,7 +38,7 @@
             <section class="hero overlay">
                 <div class="container">
                     <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
-                    <button type="button" class="button primary">Заказать услугу</button>
+                    <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
                 </div>
                 
             </section>
@@ -93,9 +93,23 @@
                 <div class="container">
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="work-list list">
-                      <li class="item"><img src="./images/img(1).jpg" alt="Печатает на клавиатуре" width="370"></li>
-                      <li class="item"><img src="./images/img(2).jpg" alt="Работает на ноуте" width="370"></li>
-                      <li class="item"><img src="./images/img(3).jpg" alt="Работает на планшете" width="370"></li>
+                       <li class="item">
+                          <div class="wrapper"><img src="./images/img(1).jpg" alt="Печатает на клавиатуре" width="370"">
+                             <div class="label"><p class="text-label">Десктопные приложения</p></div>
+                         </div>
+                     </li>
+                      <li class="item">
+                          <div class="wrapper">
+                            <img src="./images/img(2).jpg" alt="Работает на ноуте" width="370">
+                            <div class="label"><p class="text-label">Мобильные приложения</p></div>
+                          </div>
+                     </li>
+                      <li class="item">
+                          <div class="wrapper">
+                            <img src="./images/img(3).jpg" alt="Работает на планшете" width="370">
+                            <div class="label"><p class="text-label">Дизайнерские решения</p></div>
+                          </div>
+                     </li>
                   </ul>
                 </div>
             </section>
@@ -200,10 +214,15 @@
                         <li class="social-icon"><a href="" class="link"><svg width="20" height="20"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg></a></li>
                         <li class="social-icon"><a href="" class="link"><svg width="20" height="20"><use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a></li>
                     </ul>
+                </div> 
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="modal-button" data-modal-close><svg width="11" height="11"><use href="./images/symbol-defs.svg#close"></use></svg></button>
                 </div>
-                
             </div>
         </footer>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
 
